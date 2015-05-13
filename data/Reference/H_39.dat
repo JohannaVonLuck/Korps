@@ -1,0 +1,155 @@
+################################################################################
+#  Database File:   Hotchkiss H-39, French Light Tank                          #
+#  Revision Info:   Revision I, Apr. 22, 2005                                  #
+#  Created By:      Johanna W. & David L.                                     #
+#  Comments:        Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+[H_39]
+
+# Specifications
+LONG_NAME           = Hotchkiss H-39
+SHORT_NAME          = H-39
+ORIGIN              = French
+DESIGNATION         = Light Tank
+WEIGHT              = 12.1
+LENGTH              = 4.22
+WIDTH               = 1.95
+HEIGHT              = 2.15
+SPECIAL_CASE        = NA
+
+# Motor/Speed Control Data
+MOTOR               = 6L61938
+MAX_SPEED           = 36.5
+STEERING            = DIFF
+TURNING_CIRCLE      = 8.25
+SUSPENSION_EFF      = 0.90
+GEARS_FORWARD       = 5
+GEARS_REVERSE       = 1
+GEAR1_MAX_SPEED     = 3.65
+GEAR2_MAX_SPEED     = 7.3
+GEAR3_MAX_SPEED     = 13.0
+GEAR4_MAX_SPEED     = 24.0
+GEAR5_MAX_SPEED     = 36.5
+GEAR1_ATTAIN_TIME   = 5.0
+GEAR2_ATTAIN_TIME   = 17.0
+GEAR3_ATTAIN_TIME   = 33.0
+GEAR4_ATTAIN_TIME   = 73.0
+GEAR5_ATTAIN_TIME   = 123.0
+
+# Crew Data
+CREW_COUNT          = 2
+CREW1_NAME          = Commander
+CREW1_ATTACH        = TURRET1
+CREW2_NAME          = Driver
+CREW2_ATTACH        = HULL
+FEED_ROUTINE_COUNT  = 7
+FEED_ROUTINE_1      = 1:1H 2:2M                 # Order Recieve Routine
+FEED_ROUTINE_2      = 1:1H 2:2M                 # Command Crew Routine
+FEED_ROUTINE_3      = 1:1H                      # Main Gun Routine
+FEED_ROUTINE_4      = 1:1H                      # Main Loader Routine
+FEED_ROUTINE_5      = 1:1M                      # Main MGs Routine
+FEED_ROUTINE_6      = 1:2H                      # Driver Routine
+FEED_ROUTINE_7      = 1:1H 2:2M                 # Spotting Routine
+
+ORDER_RECIEVED_BY   = FEED_ROUTINE_1
+ORDER_COMMANDED_BY  = FEED_ROUTINE_2
+SPOTTING_BY         = FEED_ROUTINE_7
+DRIVING_BY          = FEED_ROUTINE_6
+
+# Devices (Turret & Optics) Data
+TURRET_COUNT        = 1
+TURRET1_SPEED       = 27
+CUPOLA_MODEL        = OBS_DOME
+CUPOLA_ATTACH       = TURRET1
+SIGHT_COUNT         = 1
+SIGHT1_TYPE         = L.767
+SIGHT1_ATTACH       = TURRET1
+SIGHT1_ELEVATE_MIN  = -16
+SIGHT1_ELEVATE_MAX  = 20
+SIGHT1_ELEVATE_STD  = 0
+SIGHT1_AIMED_BY     = FEED_ROUTINE_3
+
+# Weapon & Ammo Data
+GUN_COUNT           = 2
+GUN1_TYPE           = FR3.7L33
+GUN1_ATTACH         = TURRET1
+GUN1_SIGHT          = SIGHT1
+GUN1_LOADED_BY      = FEED_ROUTINE_4
+GUN1_LOAD_TIME      = 3.5
+GUN2_TYPE           = DE7.92MG34
+GUN2_ATTACH         = TURRET1
+GUN2_SIGHT          = SIGHT1
+GUN2_LOADED_BY      = FEED_ROUTINE_5
+GUN2_LOAD_TIME      = 3.0
+
+# Ammo Pool Data
+AMMO_MAX_SHELL_LOAD = 100
+AMMO_MAX_MG_LOAD    = 2250
+AMMO_STDLOAD_A1     = 40
+AMMO_STDLOAD_A2     = 60
+AMMO_STDLOAD_A3     = 0
+AMMO_STDLOAD_A4     = 0
+AMMO_STDLOAD_A5     = 0
+AMMO_STDLOAD_A6     = 2250
+
+# Armor Thickness Data
+ARTHCK_FR_LW_HULL   = 40
+ARTHCK_LF_LW_HULL   = 40
+ARTHCK_RG_LW_HULL   = 40
+ARTHCK_RR_LW_HULL   = 40
+ARTHCK_FR_UP_HULL   = 40
+ARTHCK_LF_UP_HULL   = 40
+ARTHCK_RG_UP_HULL   = 40
+ARTHCK_RR_UP_HULL   = 40
+ARTHCK_GLACIS       = 40
+ARTHCK_TP_HULL      = 22
+ARTHCK_FR_TURRET1   = 40
+ARTHCK_LF_TURRET1   = 40
+ARTHCK_RG_TURRET1   = 40
+ARTHCK_RR_TURRET1   = 40
+ARTHCK_TP_TURRET1   = 25
+ARTHCK_GUN_MANT1    = 40
+ARTHCK_GUN_MANT2    = 40
+ARTHCK_GUN1         = 15
+ARTHCK_GUN2         = 5
+ARTHCK_CUPOLA       = 40
+ARTHCK_TRACK_L      = 5
+ARTHCK_TRACK_R      = 5
+
+# Armor Type Data
+ARTYPE_FR_LW_HULL   = CAST
+ARTYPE_LF_LW_HULL   = CAST
+ARTYPE_RG_LW_HULL   = CAST
+ARTYPE_RR_LW_HULL   = CAST
+ARTYPE_FR_UP_HULL   = CAST
+ARTYPE_LF_UP_HULL   = CAST
+ARTYPE_RG_UP_HULL   = CAST
+ARTYPE_RR_UP_HULL   = CAST
+ARTYPE_GLACIS       = CAST
+ARTYPE_TP_HULL      = CAST
+ARTYPE_FR_TURRET1   = CAST
+ARTYPE_LF_TURRET1   = CAST
+ARTYPE_RG_TURRET1   = CAST
+ARTYPE_RR_TURRET1   = CAST
+ARTYPE_TP_TURRET1   = CAST
+ARTYPE_GUN_MANT1    = CAST
+ARTYPE_GUN_MANT1    = CAST
+ARTYPE_GUN1         = CAST
+ARTYPE_GUN2         = CAST
+ARTYPE_CUPOLA       = CAST
+ARTYPE_TRACK_L      = CAST
+ARTYPE_TRACK_R      = CAST
+
+# 3D Model Extension Data
+TURRET1_PIVOT       =  0.02  1.46  0.17
+GUN1_PIVOT          = -0.11  1.70  0.63
+GUN2_PIVOT          = -0.24  1.65  0.63
+SIGHT1_PIVOT        = -0.11  1.70  0.63
+CDH_UP_HULL         =  1.11
+CDH_TURRET          =  1.45
+GUN1_LENGTH         =  0.97
+GUN2_LENGTH         =  0.30
+CREW1_POS           =  0.12  1.60  0.06
+CREW2_POS           = -0.19  1.05  0.75
+MOTOR_POS           =  0.00  1.10 -1.08

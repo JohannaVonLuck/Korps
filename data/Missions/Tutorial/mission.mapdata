@@ -1,0 +1,14 @@
+[MAPDATA]
+MAP_WIDTH           = 750.0
+MAP_HEIGHT          = 750.0
+TILE_SIZE           = 15.0
+
+[SCENERY]
+MAX_ELEVATION       = 80.0
+WATER_ELEVATION     = 8.0
+SEASON              = Summer
+WEATHER             = Clear
+
+[PLAYER]
+AXIS_CAMSTART       = 735.0 245.0 225.0
+ALLIED_CAMSTART     = 260.0 165.0 135.0

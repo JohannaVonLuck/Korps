@@ -1,0 +1,127 @@
+################################################################################
+#  Database File:   Somua S-35, French Main Medium Tank                        #
+#  Revision Info:   Revision I, Dec. 3, 2004                                   #
+#  Created By:      Johanna W. & David L.                                     #
+#  Comments:        Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+[S_35]
+
+# Specifications
+LONG_NAME           = Somua S-35
+SHORT_NAME          = S-35
+ORIGIN              = French
+DESIGNATION         = Medium Tank
+WEIGHT              = 20.0
+LENGTH              = 5.46
+WIDTH               = 2.11
+HEIGHT              = 2.62
+SPECIAL_CASE        = NA
+
+# Motor/Speed Control Data
+MOTOR               = Somua190
+MAX_SPEED           = 37.0
+STEERING            = DBL_DIFF
+TURNING_CIRCLE      = 12.0
+SUSPENSION_EFF      = 0.95
+GEARS_FORWARD       = 5
+GEARS_REVERSE       = 1
+GEAR1_MAX_SPEED     = 4.0
+GEAR2_MAX_SPEED     = 9.1
+GEAR3_MAX_SPEED     = 17.8
+GEAR4_MAX_SPEED     = 29.7
+GEAR5_MAX_SPEED     = 40.7
+GEAR1_ATTAIN_TIME   = 4.0
+GEAR2_ATTAIN_TIME   = 9.0
+GEAR3_ATTAIN_TIME   = 26.0
+GEAR4_ATTAIN_TIME   = 60.0
+GEAR5_ATTAIN_TIME   = 120.0
+
+# Devices (Turret & Optics) Data
+TURRET_COUNT        = 1
+TURRET1_SPEED       = 30
+CUPOLA_MODEL        = OBS_DOME
+CUPOLA_ATTACH       = TURRET1
+SIGHT_COUNT         = 1
+SIGHT1_TYPE         = L.762
+SIGHT1_ATTACH       = TURRET1
+SIGHT1_ELEVATE_MIN  = -18
+SIGHT1_ELEVATE_MAX  = 18
+
+# Crew Data
+CREW_COUNT          = 3
+CREW1_NAME          = Driver
+CREW1_ATTACH        = HULL
+CREW2_NAME          = Commander
+CREW2_ATTACH        = TURRET1
+CREW3_NAME          = Radio_Op.
+CREW3_ATTACH        = HULL
+ORDER_DECODE        = RADIO_OP
+TASK_FEED_DRIVER    = 100,300,200
+TASK_FEED_GUNNER    = 200,300,000
+TASK_FEED_LOADER    = 320,000,000
+TASK_FEED_COMMANDER = 200,130,000
+TASK_FEED_RADIO_OP  = 300,100,200
+
+# Weapon & Ammo Data
+GUN_COUNT           = 2
+GUN1_TYPE           = FR4.7SA35
+GUN1_ATTACH         = TURRET1
+GUN1_SIGHT          = SIGHT1
+GUN1_FIRED_BY       = GUNNER
+GUN1_LOADED_BY      = LOADER
+GUN1_LOAD_TIME      = 4.0
+GUN2_TYPE           = FR7.5MAC31
+GUN2_ATTACH         = TURRET1
+GUN2_SIGHT          = SIGHT1
+GUN2_FIRED_BY       = GUNNER
+GUN2_LOADED_BY      = LOADER
+GUN2_LOAD_TIME      = 3.0
+
+# Ammo Pool Data
+AMMO_MAX_SHELL_LOAD = x
+AMMO_MAX_MG_LOAD    = x
+AMMO_STDLOAD_A1     = x
+AMMO_STDLOAD_A2     = x
+AMMO_STDLOAD_A3     = 0
+AMMO_STDLOAD_A4     = 0
+AMMO_STDLOAD_A5     = 0
+AMMO_STDLOAD_A6     = x
+
+# Armor Data
+FR_LW_HULL          = 47
+SD_LW_HULL          = 10++25
+RR_LW_HULL          = 25
+FR_LW_HULL_TYPE     = CAST
+SD_LW_HULL_TYPE     = CAST
+RR_LW_HULL_TYPE     = CAST
+FR_UP_HULL          = 47
+SD_UP_HULL          = 40
+RR_UP_HULL          = 35
+TP_HULL             = 20
+FR_UP_HULL_TYPE     = CAST
+SD_UP_HULL_TYPE     = CAST
+RR_UP_HULL_TYPE     = CAST
+TP_HULL_TYPE        = CAST
+FR_TURRET1          = 56
+SD_TURRET1          = 46
+RR_TURRET1          = 46
+TP_TURRET1          = 30
+FR_TURRET1_TYPE     = CAST
+SD_TURRET1_TYPE     = CAST
+RR_TURRET1_TYPE     = CAST
+TP_TURRET1_TYPE     = CAST
+GUN_MANT1           = 56
+GUN1                = 15
+GUN_MANT1_TYPE      = CAST
+GUN1_TYPE           = CAST
+CUPOLA              = 46
+CUPOLA_TYPE         = CAST
+
+# 3D Model Extension Data
+TURRET1_PIVOT      = 0.0 1.21 0.26
+GUN1_PIVOT         = 0.05 1.45 0.87
+GUN2_PIVOT         = -0.18 1.41 0.87
+SIGHT1_PIVOT       = 0.3 1.45 0.87
+GUN1_LENGTH        = 0.87
+GUN2_LENGTH        = 0.30

@@ -1,0 +1,108 @@
+[DESCRIPTION]
+NATION      = Germany
+OBJECT      = PzKpfw III F
+TEXT        =
+           Panzerkampfwagen III Ausf F
+
+Designation: Medium Tank            Crew: 5
+Dimensions: 2.91m x 2.51m x 5.52m   Weight: 19.8 tons
+Engine: 320hp V12 Maybach HL120TRM  Speed: 42 km/h
+Gearbox: 10 forward, 4 reverse      Range: 165 km
+Radio: 10 watt FuG5 (2-4km range)
+Armament:
+  1x 3.7cm KwK L/45, 131 rounds total
+  3x 7.92mm MG34, 4,500 rounds total
+Armor:
+  Hull: 16-30mm, front plates face hardened
+  Turret: 10-35mm, front plates face hardened
+
+Information:
+
+  The Panzer III, along with its brother the Panzer IV,
+was one of the main German tanks that went into battle
+during the early war invasions of Poland, France, North
+Africa, and Russia. It went through many variations,
+Ausf A to Ausf N (including several command tanks), and
+was the back bone of the German Whermacht up until mid
+1942 when it started being phased out by the Panzer IV
+'Special'. This change was due to a need to mount more
+powerful weapontry to combat the mass numbers of enemy
+tanks that were being encountered on the field. The last
+recorded action these tanks saw was in June of 1944.
+
+  The defining feature of the Panzer III was mobility.
+It had a powerful 320 horsepower Maybach V-12 engine,
+good torsion bar suspension, and deeply cut tracks.
+Although for its entire life span, as compared to the
+foes it was to face, was lacking in terms of both
+firepower and armor protection, it proved to be an
+effective tank in its day and age when given a good
+crew (and a few AP40 rounds).
+
+  Like the Panzer IV, the Panzer III had a five man
+crew where each crew member had a specific function.
+This allowed for each crew member to concentrate on
+one sole task, allowing for greater command and control
+of the tank itself in combat. In addition to the five
+man crew, the commander's cupola had an opening hatch
+which allowed for greater visiblity. Along with a radio
+being installed in each tank that was produced, this
+setup allowed for an excellent underlaying basis for the
+tank to operate upon.
+
+Advantages:
+ - Good mobility
+ - Five man crew
+ - Cupola, with opening hatch
+ - Radio
+
+Disadvantages:
+ - Poor armor protection
+ - Poor weapontry (comparitevly)
+ - Poor camoflauge
+
+Featured Information:
+
+  A commonly misinterpreted piece of information is
+that there were Panzer III's with 5.0cm guns that
+participated in the fighting in France; this has been
+shown to be false. Production of the first 5.0cm rounds
+was not until June of 1940, and even then only for the
+several Pak38 anti-tank guns coming off the assembly
+lines, none of which are recorded as participating in
+the fighting in France. However, in the following month
+after fighting ceased in France, Panzer III Ausf G's
+with 5.0cm guns did start coming off the assembly lines.
+If the fighting in France had extended longer than the
+six weeks it did, these tanks could have possibly made
+it into action.
+
+  Another misinterpreted piece of information is the
+usage of AP40 (aka Pz.Gr.40, tungsten cored ammunition,
+or APCR) by the Panzer III during the invasion into
+France. Official German ammunition production reports
+along with several combat AARs show that the first usage
+of these rounds were, more than likely, in early June of
+1940, making their appearence during the last two weeks
+of fighting in France. This topic is still debatable
+given the situation these pieces of information do
+contain, but it appears as if there is more evidence
+that supports its usage than there is that does not.
+
+ The one last mystery is the usage of the two toned
+camoflauge of dark grey and signal brown. Official
+German documents record that the German Whermacht did
+not officially change over to overall dark grey until
+after the invasion of France had came to conclusion.
+Due to the close resemblence of the coloring of these
+two paints in black and white photos, it is almost
+impossible to determine if vehicles had two toned
+camoflauge unless pictures were taken in favourable
+lighting conditions. However, there exists photo
+evidence of newly painted Panzer IIIs that are clearly
+visibile to be painted in two-toned camoflauge, but
+there also exists colored photo evidence of Panzer IIIs
+in overall dark grey without any possible hint of
+two-toned camoflauge. Both ways, it is still a mystery
+if there was in fact any two-toned camoflauged Panzer
+IIIs which participated in Poland or France.

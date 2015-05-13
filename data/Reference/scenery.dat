@@ -1,0 +1,185 @@
+################################################################################
+#  Database File:   Scenery                                                    #
+#  Revision Info:   Revision I, Feb. 27, 2005                                  #
+#  Created By:      Johanna W.                                                #
+#  Comments:        Buildings and trees data file.                             #
+#                   Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+# Buildings
+
+[SC_Bldg_Ch_1]
+TAG                 = BLDG
+
+[SC_Bldg_Lg_1]
+TAG                 = BLDG
+
+[SC_Bldg_Lg_2]
+TAG                 = BLDG
+
+[SC_Bldg_Lg_3]
+TAG                 = BLDG
+
+[SC_Bldg_Lg_4]
+TAG                 = BLDG
+
+[SC_Bldg_Md_1]
+TAG                 = BLDG
+
+[SC_Bldg_Md_2]
+TAG                 = BLDG
+
+[SC_Bldg_Md_3]
+TAG                 = BLDG
+
+[SC_Bldg_Md_4]
+TAG                 = BLDG
+
+[SC_Bldg_Sm_1]
+TAG                 = BLDG
+
+[SC_Bldg_Sm_2]
+TAG                 = BLDG
+
+[SC_Bldg_Sm_3]
+TAG                 = BLDG
+
+[SC_Bldg_Sm_4]
+TAG                 = BLDG
+
+
+# Trees
+
+# Spring/Summer Trees
+[SC_S_Tree_1]
+TAG                 = TREE
+SCALING             = 8.34168 9.2584
+LPBB_COUNT          = 8
+LPBB_1_POS          = -0.86  5.75  0.00
+LPBB_2_POS          =  0.85  7.21  0.00
+LPBB_3_POS          =  1.41  7.84  0.48
+LPBB_4_POS          =  2.73  8.97  1.48
+LPBB_5_POS          =  1.17  8.32  0.02
+LPBB_6_POS          =  0.39  9.19 -1.46
+LPBB_7_POS          = -2.70  7.39 -0.73
+LPBB_8_POS          = -0.50  9.21  2.36
+
+[SC_S_Tree_2]
+TAG                 = TREE
+SCALING             = 3.12891 4.83323
+LPBB_COUNT          = 9
+LPBB_1_POS          =  0.43  3.21 -0.30
+LPBB_2_POS          =  0.94  3.14 -0.71
+LPBB_3_POS          =  0.74  3.79  0.11
+LPBB_4_POS          =  0.39  3.81  0.56
+LPBB_5_POS          =  0.50  4.50  0.66
+LPBB_6_POS          = -0.18  3.77 -0.11
+LPBB_7_POS          =  0.40  4.40 -0.42
+LPBB_8_POS          = -0.78  4.00 -0.50
+LPBB_9_POS          = -0.28  4.51  0.43
+
+[SC_S_Tree_3]
+TAG                 = TREE
+SCALING             = 5.11289 6.40046
+LPBB_COUNT          = 9
+LPBB_1_POS          =  1.25  4.19  0.88
+LPBB_2_POS          =  1.31  2.96 -0.75
+LPBB_3_POS          = -1.40  3.40  0.07
+LPBB_4_POS          =  0.68  4.07 -0.77
+LPBB_5_POS          =  1.23  5.27 -1.47
+LPBB_6_POS          =  0.45  5.45  1.35
+LPBB_7_POS          = -0.85  5.80  0.81
+LPBB_8_POS          = -1.80  4.79 -0.77
+LPBB_9_POS          = -2.52  4.72 -1.81
+
+[SC_S_Tree_4]
+TAG                 = TREE
+SCALING             = 3.13189 5.59821
+LPBB_COUNT          = 9
+LPBB_1_POS          =  0.23  3.45 -0.28
+LPBB_2_POS          =  0.45  3.96 -0.61
+LPBB_3_POS          =  0.90  4.25 -0.06
+LPBB_4_POS          =  0.25  5.14 -0.84
+LPBB_5_POS          = -0.31  5.32 -0.86
+LPBB_6_POS          = -0.37  3.52  0.27
+LPBB_7_POS          = -1.41  4.04 -0.32
+LPBB_8_POS          = -0.77  4.45  1.06
+LPBB_9_POS          = -0.45  4.95  0.54
+
+# Autumn/Fall Trees
+[SC_A_Tree_1]
+TAG                 = TREE
+SCALING             = 2.938 5.875 2.25
+LPBB_COUNT          = 9
+LPBB_1_POS          = -0.66  2.60 -0.53
+LPBB_2_POS          =  0.02  3.47  0.24
+LPBB_3_POS          =  0.31  4.50  0.87
+LPBB_4_POS          =  0.88  5.18  1.13
+LPBB_5_POS          = -0.23  5.23  1.44
+LPBB_6_POS          =  0.04  4.34  0.29
+LPBB_7_POS          = -0.25  5.61  0.04
+LPBB_8_POS          = -1.15  4.82  1.03
+LPBB_9_POS          = -1.38  4.12 -0.49
+
+[SC_A_Tree_2]
+TAG                 = TREE
+SCALING             = 6 6.65909
+LPBB_COUNT          = 9
+LPBB_1_POS          =  0.43  3.77 -0.48
+LPBB_2_POS          =  1.78  5.10 -0.50
+LPBB_3_POS          =  0.08  4.94 -0.09
+LPBB_4_POS          = -0.24  3.93  0.40
+LPBB_5_POS          =  0.57  5.20  0.37
+LPBB_6_POS          =  1.46  5.97  0.12
+LPBB_7_POS          =  1.00  6.37  0.93
+LPBB_8_POS          = -0.83  4.79 -0.10
+LPBB_9_POS          = -0.82  5.55 -0.61
+
+[SC_A_Tree_3]
+TAG                 = TREE
+SCALING             = 2.53125 4.26562
+LPBB_COUNT          = 7
+LPBB_1_POS          =  0.06  2.69  0.03
+LPBB_2_POS          =  0.30  3.04  0.07
+LPBB_3_POS          =  0.80  3.04 -0.40
+LPBB_4_POS          =  0.51  3.51  0.33
+LPBB_5_POS          = -0.78  3.19  0.22
+LPBB_6_POS          = -0.07  3.57 -0.35
+LPBB_7_POS          = -0.02  4.19 -0.57
+
+[SC_A_Tree_4]
+TAG                 = TREE
+SCALING             = 4.74844 6.55087
+LPBB_COUNT          = 9
+LPBB_1_POS          =  0.67  3.66 -0.50
+LPBB_2_POS          =  1.51  4.51 -1.08
+LPBB_3_POS          =  0.43  4.61  1.01
+LPBB_4_POS          =  0.90  5.35  1.88
+LPBB_5_POS          = -0.78  4.32 -0.67
+LPBB_6_POS          = -2.05  5.27 -1.88
+LPBB_7_POS          = -0.08  5.26  0.04
+LPBB_8_POS          = -0.52  6.20  0.22
+LPBB_9_POS          =  0.83  6.42 -0.46
+
+# Pine Trees
+[SC_P_Tree_1]
+TAG                 = TREE
+SCALING             = 4 8
+
+[SC_P_Tree_2]
+TAG                 = TREE
+SCALING             = 4 8
+
+[SC_P_Tree_3]
+TAG                 = TREE
+SCALING             = 3.875 8
+
+[SC_P_Tree_4]
+TAG                 = TREE
+SCALING             = 4 8
+
+
+# Misc. Scenery Objects
+
+[M_Old_Car]
+TAG                 = VEHC

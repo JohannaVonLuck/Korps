@@ -1,0 +1,201 @@
+################################################################################
+#  Database File:   Panzer III F, German Main Medium Tank                      #
+#  Revision Info:   Revision Ia, Jan. 19, 2005                                 #
+#  Created By:      Johanna W. & Michael R.                                   #
+#  Comments:        Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+[Pz_III_F]
+
+# Specifications
+LONG_NAME           = PzKpfw III Ausf F
+SHORT_NAME          = PzIIIF
+ORIGIN              = German
+DESIGNATION         = Medium Tank
+WEIGHT              = 19.8
+LENGTH              = 5.52
+WIDTH               = 2.91
+HEIGHT              = 2.51
+SPECIAL_CASE        = NA
+
+# Motor/Speed Control Data
+MOTOR               = HL120TRM
+MAX_SPEED           = 42.0
+STEERING            = DIFF
+TURNING_CIRCLE      = 9.0
+SUSPENSION_EFF      = 1.00
+GEARS_FORWARD       = 10
+GEARS_REVERSE       = 1
+GEAR1_MAX_SPEED     = 4.6
+GEAR2_MAX_SPEED     = 6.3
+GEAR3_MAX_SPEED     = 8.4
+GEAR4_MAX_SPEED     = 11.2
+GEAR5_MAX_SPEED     = 15.2
+GEAR6_MAX_SPEED     = 20.4
+GEAR7_MAX_SPEED     = 27.7
+GEAR8_MAX_SPEED     = 36.9
+GEAR9_MAX_SPEED     = 39.9
+GEAR10_MAX_SPEED    = 40.0
+GEAR1_ATTAIN_TIME   = 1.0
+GEAR2_ATTAIN_TIME   = 2.5
+GEAR3_ATTAIN_TIME   = 5.0
+GEAR4_ATTAIN_TIME   = 8.0
+GEAR5_ATTAIN_TIME   = 13.0
+GEAR6_ATTAIN_TIME   = 23.0
+GEAR7_ATTAIN_TIME   = 45.0
+GEAR8_ATTAIN_TIME   = 85.0
+GEAR9_ATTAIN_TIME   = 115.0
+GEAR10_ATTAIN_TIME  = 150.0
+
+# Crew Data
+CREW_COUNT          = 5
+CREW1_NAME          = Commander
+CREW1_ATTACH        = TURRET1
+CREW2_NAME          = Gunner
+CREW2_ATTACH        = TURRET1
+CREW3_NAME          = Loader
+CREW3_ATTACH        = TURRET1
+CREW4_NAME          = Driver
+CREW4_ATTACH        = HULL
+CREW5_NAME          = Radio Operator
+CREW5_ATTACH        = HULL
+FEED_ROUTINE_COUNT  = 8
+FEED_ROUTINE_1      = 1:5H1M 2:2M3L4L           # Order Receive Routine
+FEED_ROUTINE_2      = 1:1H2L 2:5M3L4L           # Command Crew Routine
+FEED_ROUTINE_3      = 1:2H 2:3H 3:1H            # Main Gun Routine
+FEED_ROUTINE_4      = 1:3H 2:2H 3:1H            # Main Loader Routine
+FEED_ROUTINE_5      = 1:3M 2:2M 3:1M            # Main MGs Routine
+FEED_ROUTINE_6      = 1:4H 2:5L                 # Driver Routine
+FEED_ROUTINE_7      = 1:5M 2:4L                 # Hull Machine Gun Routine
+FEED_ROUTINE_8      = 1:1H 2:3M2M               # Spotting Routine
+
+ORDER_RECIEVED_BY   = FEED_ROUTINE_1
+ORDER_COMMANDED_BY  = FEED_ROUTINE_2
+SPOTTING_BY         = FEED_ROUTINE_8
+DRIVING_BY          = FEED_ROUTINE_6
+
+# Devices (Turret & Optics) Data
+TURRET_COUNT        = 1
+TURRET1_SPEED       = 18
+CUPOLA_MODEL        = DBL_HATCH
+CUPOLA_ATTACH       = TURRET1
+SIGHT_COUNT         = 2
+SIGHT1_TYPE         = TZF5a
+SIGHT1_ATTACH       = TURRET1
+SIGHT1_ELEVATE_MIN  = -10
+SIGHT1_ELEVATE_MAX  = 20
+SIGHT1_ELEVATE_STD  = 0
+SIGHT1_AIMED_BY     = FEED_ROUTINE_3
+SIGHT2_TYPE         = KgZF2
+SIGHT2_ATTACH       = HULL
+SIGHT2_ELEVATE_MIN  = -10
+SIGHT2_ELEVATE_MAX  = 10
+SIGHT2_ELEVATE_STD  = 0
+SIGHT2_TRANS_MIN    = -15
+SIGHT2_TRANS_MAX    = 20
+SIGHT2_AIMED_BY     = FEED_ROUTINE_7
+
+# Weapon & Ammo Data
+GUN_COUNT           = 4
+GUN1_TYPE           = DE3.7KwK36
+GUN1_ATTACH         = TURRET1
+GUN1_SIGHT          = SIGHT1
+GUN1_LOADED_BY      = FEED_ROUTINE_4
+GUN1_LOAD_TIME      = 3.5
+GUN2_TYPE           = DE7.92MG34
+GUN2_ATTACH         = TURRET1
+GUN2_SIGHT          = SIGHT1
+GUN2_LOADED_BY      = FEED_ROUTINE_5
+GUN2_LOAD_TIME      = 3.0
+GUN3_TYPE           = DE7.92MG34
+GUN3_ATTACH         = TURRET1
+GUN3_SIGHT          = SIGHT1
+GUN3_LOADED_BY      = FEED_ROUTINE_5
+GUN3_LOAD_TIME      = 3.0
+GUN4_TYPE           = DE7.92MG34
+GUN4_ATTACH         = HULL
+GUN4_SIGHT          = SIGHT2
+GUN4_LOADED_BY      = FEED_ROUTINE_7
+GUN4_LOAD_TIME      = 3.0
+
+# Ammo Pool Data
+AMMO_MAX_SHELL_LOAD = 131
+AMMO_MAX_MG_LOAD    = 4800
+AMMO_STDLOAD_A1     = 81
+AMMO_STDLOAD_A2     = 0
+AMMO_STDLOAD_A3     = 50
+AMMO_STDLOAD_A4     = 0
+AMMO_STDLOAD_A5     = 0
+AMMO_STDLOAD_A6     = 4500
+
+# Armor Thickness Data
+ARTHCK_FR_LW_HULL   = 30
+ARTHCK_LF_LW_HULL   = 30
+ARTHCK_RG_LW_HULL   = 30
+ARTHCK_RR_LW_HULL   = 30
+ARTHCK_FR_UP_HULL   = 30
+ARTHCK_LF_UP_HULL   = 30
+ARTHCK_RG_UP_HULL   = 30
+ARTHCK_RR_UP_HULL   = 30
+ARTHCK_TP_HULL      = 16
+ARTHCK_GLACIS       = 26
+ARTHCK_FR_TURRET1   = 30
+ARTHCK_LF_TURRET1   = 30
+ARTHCK_RG_TURRET1   = 30
+ARTHCK_RR_TURRET1   = 30
+ARTHCK_TP_TURRET1   = 10
+ARTHCK_GUN_MANT1    = 35
+ARTHCK_GUN1         = 15
+ARTHCK_GUN2         = 5
+ARTHCK_GUN3         = 5
+ARTHCK_GUN4         = 5
+ARTHCK_CUPOLA       = 30
+ARTHCK_TRACK_L      = 5
+ARTHCK_TRACK_R      = 5
+
+# Armor Type Data
+ARTYPE_FR_LW_HULL   = FHS
+ARTYPE_LF_LW_HULL   = RHA
+ARTYPE_RG_LW_HULL   = RHA
+ARTYPE_RR_LW_HULL   = RHA
+ARTYPE_FR_UP_HULL   = FHS
+ARTYPE_LF_UP_HULL   = RHA
+ARTYPE_RG_UP_HULL   = RHA
+ARTYPE_RR_UP_HULL   = RHA
+ARTYPE_TP_HULL      = RHA
+ARTYPE_GLACIS       = RHA
+ARTYPE_FR_TURRET1   = FHS
+ARTYPE_LF_TURRET1   = RHA
+ARTYPE_RG_TURRET1   = RHA
+ARTYPE_RR_TURRET1   = RHA
+ARTYPE_TP_TURRET1   = RHA
+ARTYPE_GUN_MANT1    = FHS
+ARTYPE_GUN1         = CAST
+ARTYPE_GUN2         = CAST
+ARTYPE_GUN3         = CAST
+ARTYPE_GUN4         = CAST
+ARTYPE_CUPOLA       = RHA
+ARTYPE_TRACK_L      = CAST
+ARTYPE_TRACK_R      = CAST
+
+# 3D Model Extension Data
+MISC_MANT_ATTACH    = TURRET1
+TURRET1_PIVOT       =  0.00  1.21  0.26
+GUN1_PIVOT          =  0.0525 1.45 0.87
+GUN2_PIVOT          = -0.20  1.45  0.87
+GUN3_PIVOT          = -0.33  1.45  0.87
+GUN4_PIVOT          = -0.54  1.13  1.23
+SIGHT1_PIVOT        =  0.25  1.45  0.87
+SIGHT2_PIVOT        = -0.54  1.13  1.23
+CDH_UP_HULL         =  1.04
+CDH_TURRET          =  1.21
+GUN1_LENGTH         =  0.87
+GUN2_LENGTH         =  0.30
+GUN3_LENGTH         =  0.26
+GUN4_LENGTH         =  0.24
+CREW1_POS           =  0.00  1.50 -0.25
+CREW2_POS           =  0.30  1.35  0.45
+CREW3_POS           = -0.30  1.35  0.45
+CREW4_POS           =  0.38  0.95  0.95
+CREW5_POS           = -0.50  0.95  0.95
+MOTOR_POS           =  0.00  0.65 -1.10

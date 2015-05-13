@@ -1,0 +1,564 @@
+################################################################################
+#  Database File:   German Weapon Table                                        #
+#  Revision Info:   Revision Ia, Jan. 19, 2005                                 #
+#  Created By:      Johanna W. & Michael R.                                   #
+#  Comments:        Original data file for Korps - Modify with pleasure.       #
+################################################################################
+
+#------------------------------------------------------------------------------#
+#                                     Guns                                     #
+#------------------------------------------------------------------------------#
+
+# German hull-mounted machine gun
+[DE7.92MG34]
+DESIGNATION         = 7.92mm MG34
+AUTOMATIC_EJECT     = FALSE
+CLIP_SIZE           = 75
+CLIP_FIRING_RPM     = 850.0
+CLIP_STD_BURST      = 10
+A6_FIRED            = DEMG
+BARREL_RECOIL       = 0.0125
+
+# Czech hull-mounted machine gun (35t/38t)
+[DE7.92MG37]
+DESIGNATION         = 7.92mm MG37(t)
+AUTOMATIC_EJECT     = FALSE
+CLIP_SIZE           = 75
+CLIP_FIRING_RPM     = 850.0
+CLIP_STD_BURST      = 10
+A6_FIRED            = DEMG
+BARREL_RECOIL       = 0.0125
+
+# PzII main gun
+[DE2.0KwK30]
+DESIGNATION         = 2.0cm KwK30 L/55
+AUTOMATIC_EJECT     = FALSE
+CLIP_SIZE           = 10
+CLIP_FIRING_RPM     = 280.0
+CLIP_STD_BURST      = 5
+A1_FIRED            = DE2.0PzGr
+A2_FIRED            = DE2.0SpGr
+A3_FIRED            = DE2.0PzGr40
+BARREL_RECOIL       = 0.25
+
+# German 3.7cm ATG
+[DE3.7PaK]
+DESIGNATION         = 3.7cm PaK L/45
+A1_FIRED            = DE3.7PzGr
+A2_FIRED            = DE3.7SpGr18
+A3_FIRED            = DE3.7SpGr40
+A4_FIRED            = DE3.7StielGr41
+BARREL_RECOIL       = 0.27
+
+# Czech 3.7cm ATG
+[DE3.7PaK37t]
+DESIGNATION         = 3.7cm PaK37(t) L/47.8
+A1_FIRED            = DE3.7PzGr37tumg
+A2_FIRED            = DE3.7SpGr37t
+BARREL_RECOIL       = 0.25
+
+# Polish 3.7cm ATG
+[DE3.7PaK36p]
+DESIGNATION         = 3.7cm PaK36(p) L/45
+A1_FIRED            = DE3.7PzGr36p
+A2_FIRED            = DE3.7SpGr36p
+BARREL_RECOIL       = 0.25
+
+# PzIII main gun
+[DE3.7KwK36]
+DESIGNATION         = 3.7cm KwK36 L/45
+A1_FIRED            = DE3.7PzGr
+A2_FIRED            = DE3.7SpGr18
+A3_FIRED            = DE3.7SpGr40
+A4_FIRED            = DE3.7PzGr40
+BARREL_RECOIL       = 0.27
+
+# Pz35t main gun
+[DE3.7KwK34t]
+DESIGNATION         = 3.7cm KwK34(t) L/40
+A1_FIRED            = DE3.7PzGr34t
+A2_FIRED            = DE3.7PzGr34tumg
+A3_FIRED            = DE3.7SpGr34t
+A4_FIRED            = DE3.7PzGr40t
+BARREL_RECOIL       = 0.25
+
+# Pz38t main gun
+[DE3.7KwK38t]
+DESIGNATION         = 3.7cm KwK38(t) L/47.8
+A1_FIRED            = DE3.7PzGr37t
+A2_FIRED            = DE3.7PzGr37tumg
+A3_FIRED            = DE3.7SpGr37t
+A4_FIRED            = DE3.7PzGr40t
+BARREL_RECOIL       = 0.27
+
+# Czech 4.7cm ATG & PzJgrIB main gun
+[DE4.7PaKt]
+DESIGNATION         = 4.7cm PaK(t) L/43.4
+A1_FIRED            = DE4.7PzGr36t
+#A2_FIRED            = DE4.7PzGr36tumg
+A3_FIRED            = DE4.7SpGr36t
+A4_FIRED            = DE4.7PzGr40t
+BARREL_RECOIL       = 0.25
+
+# German 5.0cm ATG
+[DE5.0PaK38]
+DESIGNATION         = 5.0cm PaK38 L/60
+A1_FIRED            = DE5.0PzGrL60
+A2_FIRED            = DE5.0PzGr39L60
+A3_FIRED            = DE5.0SpGr39
+#A4_FIRED            = DE5.0PzGr4039
+BARREL_RECOIL       = 0.25
+
+# PzIII (short 5cm) main gun
+[DE5.0KwK38]
+DESIGNATION         = 5.0cm KwK38 L/42
+A1_FIRED            = DE5.0PzGrL42
+A2_FIRED            = DE5.0PzGr39L42
+A3_FIRED            = DE5.0SpGr38
+#A4_FIRED            = DE5.0PzGr4038
+BARREL_RECOIL       = 0.25
+
+# PzIII (long 5cm) main gun
+[DE5.0KwK39]
+DESIGNATION         = 5.0cm KwK39 L/60
+A1_FIRED            = DE5.0PzGrL60
+A2_FIRED            = DE5.0PzGr39L60
+A3_FIRED            = DE5.0SpGr39
+#A4_FIRED            = DE5.0PzGr4039
+BARREL_RECOIL       = 0.25
+
+# PzIV main gun
+[DE7.5KwK37]
+DESIGNATION         = 7.5cm KwK37 L/24
+A1_FIRED            = DE7.5KGrrotPz
+A2_FIRED            = DE7.5SpGr
+A3_FIRED            = DE7.5Gr38Hl
+A4_FIRED            = DE7.5SMOKE
+A5_FIRED            = DE7.5CASE
+BARREL_RECOIL       = 0.2
+
+# StuG III main gun
+[DE7.5StuK37]
+DESIGNATION         = 7.5cm StuK37 L/24
+A1_FIRED            = DE7.5KGrrotPz
+A2_FIRED            = DE7.5SpGr
+A3_FIRED            = DE7.5Gr38Hl
+A4_FIRED            = DE7.5SMOKE
+A5_FIRED            = DE7.5CASE
+BARREL_RECOIL       = 0.2
+
+# Eighty-eight (w/o gun shield)
+[DE8.8FlaK18]
+DESIGNATION         = 8.8cm FlaK18 L/56
+A1_FIRED            = DE8.8PzGr
+A2_FIRED            = DE8.8PzGr39
+A3_FIRED            = DE8.8SpGr
+A5_FIRED            = DE8.8SMOKE
+BARREL_RECOIL       = 0.25
+
+# Eighty-eight (/w gun shield)
+[DE8.8FlaK36]
+DESIGNATION         = 8.8cm FlaK36 L/56
+A1_FIRED            = DE8.8PzGr
+A2_FIRED            = DE8.8PzGr39
+A3_FIRED            = DE8.8SpGr
+A5_FIRED            = DE8.8SMOKE
+BARREL_RECOIL       = 0.25
+
+#------------------------------------------------------------------------------#
+#                                    Shells                                    #
+#------------------------------------------------------------------------------#
+
+[DEMG]
+DESIGNATION         = 7.92mm S.m.K.H.
+TYPE                = AP
+CALIBER             = 0.792
+VELOCITY            = 650
+WEIGHT              = 0.0115
+#MODIFIERS           = WHITE_TRACER
+MODIFIERS           = NONE
+PEN_RHA_AT_PB       = 11.8
+PEN_RHA_CURVE       = 0.997551
+
+[DE2.0PzGr]
+DESIGNATION         = 2.0cm Pzgr. Patr.
+TYPE                = AP
+CALIBER             = 2.0
+VELOCITY            = 780
+WEIGHT              = 0.148
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 41.7
+PEN_RHA_CURVE       = 0.999109
+
+[DE2.0SpGr]
+DESIGNATION         = 2.0cm Sprgr. Patr.
+TYPE                = HE
+CALIBER             = 2.0
+VELOCITY            = 780
+WEIGHT              = 0.148
+EXPLOSIVE           = 0.0066
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999113
+
+[DE2.0PzGr40]
+DESIGNATION         = 2.0cm Pzgr. Patr. 40
+TYPE                = APCR
+CALIBER             = 2.0
+VELOCITY            = 1050
+WEIGHT              = 0.1
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 60.9
+PEN_RHA_CURVE       = 0.998269
+
+[DE3.7PzGr]
+DESIGNATION         = 3.7cm Pzgr. Patr.
+TYPE                = AP
+CALIBER             = 3.7
+VELOCITY            = 745
+WEIGHT              = 0.685
+EXPLOSIVE           = 0.013
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 54.3
+PEN_RHA_CURVE       = 0.999586
+
+[DE3.7SpGr18]
+DESIGNATION         = 3.7cm Sprgr. Patr. 18 umg
+TYPE                = HE
+CALIBER             = 3.7
+VELOCITY            = 745
+WEIGHT              = 0.685
+EXPLOSIVE           = 0.026
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999586
+
+[DE3.7SpGr40]
+DESIGNATION         = 3.7cm Sprgr. Patr. 40
+TYPE                = HE
+CALIBER             = 3.7
+VELOCITY            = 745
+WEIGHT              = 0.685
+EXPLOSIVE           = 0.046
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999586
+
+[DE3.7PzGr40]
+DESIGNATION         = 3.7cm Pzgr. Patr. 40
+TYPE                = APCR
+CALIBER             = 3.7
+VELOCITY            = 1020
+WEIGHT              = 0.368
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 101.4
+PEN_RHA_CURVE       = 0.998782
+
+[DE3.7StielGr41]
+DESIGNATION         = 3.7cm Stielgranate 41
+TYPE                = HEAT
+CALIBER             = 3.7
+VELOCITY            = 110
+WEIGHT              = 8.6
+EXPLOSIVE           = 2.514
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 208.0
+PEN_RHA_CURVE       = 1.0
+
+[DE3.7PzGr34t]
+DESIGNATION         = 3.7cm Pzgr. Patr. 34(t)
+TYPE                = AP
+CALIBER             = 3.7
+VELOCITY            = 675
+WEIGHT              = 0.850
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 54.7
+PEN_RHA_CURVE       = 0.999619
+
+[DE3.7PzGr34tumg]
+DESIGNATION         = 3.7cm Pzgr. Patr. 34(t) umg.
+TYPE                = AP
+CALIBER             = 3.7
+VELOCITY            = 675
+WEIGHT              = 0.815
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 52.5
+PEN_RHA_CURVE       = 0.999692
+
+[DE3.7SpGr34t]
+DESIGNATION         = 3.7cm Sprgr. Patr. 34(t)
+TYPE                = HE
+CALIBER             = 3.7
+VELOCITY            = 675
+WEIGHT              = 0.850
+EXPLOSIVE           = 0.077
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999619
+
+[DE3.7PzGr40t]
+DESIGNATION         = 3.7cm Pzgr. Patr. 40(t)
+TYPE                = APCR
+CALIBER             = 3.7
+VELOCITY            = 980
+WEIGHT              = 0.368
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 90.1
+PEN_RHA_CURVE       = 0.998782
+
+[DE3.7PzGr37t]
+DESIGNATION         = 3.7cm Pzgr. Patr. 37(t)
+TYPE                = AP
+CALIBER             = 3.7
+VELOCITY            = 741
+WEIGHT              = 0.850
+EXPLOSIVE           = 0.008
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 56.1
+PEN_RHA_CURVE       = 0.999632
+
+[DE3.7PzGr37tumg]
+DESIGNATION         = 3.7cm Pzgr. Patr. 37(t) umg.
+TYPE                = AP
+CALIBER             = 3.7
+VELOCITY            = 750
+WEIGHT              = 0.815
+EXPLOSIVE           = 0.008
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 62.7
+PEN_RHA_CURVE       = 0.999619
+
+[DE3.7SpGr37t]
+DESIGNATION         = 3.7cm Sprgr. Patr. 34(t)
+TYPE                = HE
+CALIBER             = 3.7
+VELOCITY            = 741
+WEIGHT              = 0.850
+EXPLOSIVE           = 0.077
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999619
+
+[DE3.7PzGr40t]
+DESIGNATION         = 3.7cm Pzgr. Patr. 40(t)
+TYPE                = APCR
+CALIBER             = 3.7
+VELOCITY            = 1040
+WEIGHT              = 0.368
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 103.4
+PEN_RHA_CURVE       = 0.998782
+
+[DE4.7PzGr36t]
+DESIGNATION         = 4.7cm Pzgr. Patr. 36(t)
+TYPE                = APC
+CALIBER             = 4.7
+VELOCITY            = 782
+WEIGHT              = 1.65
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 80.8
+PEN_RHA_CURVE       = 0.999689
+
+[DE4.7SpGr36t]
+DESIGNATION         = 4.7cm Sprgr. Patr. 36(t)
+TYPE                = HE
+CALIBER             = 4.7
+VELOCITY            = 782
+WEIGHT              = 1.65
+EXPLOSIVE           = 0.251
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999689
+
+[DE4.7PzGr40t]
+DESIGNATION         = 4.7cm Pzgr. Patr. 40(t)
+TYPE                = APCR
+CALIBER             = 4.7
+VELOCITY            = 1080
+WEIGHT              = 0.825
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 160.9
+PEN_RHA_CURVE       = 0.998682
+
+[DE5.0PzGrL60]
+DESIGNATION         = 5.0cm Pzgr. Patr.
+TYPE                = AP
+CALIBER             = 5.0
+VELOCITY            = 835
+WEIGHT              = 2.06
+EXPLOSIVE           = 0.017
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 102.6
+PEN_RHA_CURVE       = 0.999511
+
+[DE5.0PzGr39L60]
+DESIGNATION         = 5.0cm Pzgr. Patr. 39
+TYPE                = APC
+CALIBER             = 5.0
+VELOCITY            = 835
+WEIGHT              = 2.06
+EXPLOSIVE           = 0.017
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 104.8
+PEN_RHA_CURVE       = 0.999553
+
+[DE5.0SpGr39]
+DESIGNATION         = 5.0cm Sprgr. Patr. 39
+TYPE                = HE
+CALIBER             = 5.0
+VELOCITY            = 835
+WEIGHT              = 2.06
+EXPLOSIVE           = 0.170
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999511
+
+[DE5.0PzGrL42]
+DESIGNATION         = 5.0cm Pzgr. Patr.
+TYPE                = AP
+CALIBER             = 5.0
+VELOCITY            = 685
+WEIGHT              = 2.06
+EXPLOSIVE           = 0.017
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 81.2
+PEN_RHA_CURVE       = 0.999431
+
+[DE5.0PzGr39L42]
+DESIGNATION         = 5.0cm Pzgr. Patr. 39
+TYPE                = APC
+CALIBER             = 5.0
+VELOCITY            = 685
+WEIGHT              = 2.06
+EXPLOSIVE           = 0.017
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 84.5
+PEN_RHA_CURVE       = 0.999517
+
+[DE5.0SpGr38]
+DESIGNATION         = 5.0cm Sprgr. Patr. 38
+TYPE                = HE
+CALIBER             = 5.0
+VELOCITY            = 685
+WEIGHT              = 2.06
+EXPLOSIVE           = 0.170
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999431
+
+[DE7.5KGrrotPz]
+DESIGNATION         = 7.5cm K. Gr. Patr. rot Pz.
+TYPE                = APCBC
+CALIBER             = 7.5
+VELOCITY            = 385
+WEIGHT              = 6.8
+EXPLOSIVE           = 0.051
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 56.226091
+PEN_RHA_CURVE       = 0.999834
+
+[DE7.5SpGr]
+DESIGNATION         = 7.5cm Sprgr. Patr. 34
+TYPE                = HE
+CALIBER             = 7.5
+VELOCITY            = 385
+WEIGHT              = 6.8
+EXPLOSIVE           = 0.690
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.9
+
+[DE7.5Gr38Hl]
+DESIGNATION         = 7.5cm Gr. Patr. 38 Hl
+TYPE                = HEAT
+CALIBER             = 7.5
+VELOCITY            = 450
+WEIGHT              = 4.4
+EXPLOSIVE           = 0.510
+MODIFIERS           = WHITE_TRACER
+PEN_RHA_AT_PB       = 52.0
+PEN_RHA_CURVE       = 1.0
+
+[DE7.5SMOKE]
+DESIGNATION         = 7.5cm Patr. Smoke
+TYPE                = SMOKE
+CALIBER             = 7.5
+VELOCITY            = 385
+WEIGHT              = 4.0
+MODIFIERS           = N/A
+PEN_RHA_AT_PB       = 0.0
+PEN_RHA_CURVE       = 1.0
+
+[DE7.5CASE]
+DESIGNATION         = 7.5cm Patr. Cannister
+TYPE                = CASE
+CALIBER             = 7.5
+VELOCITY            = 385
+WEIGHT              = 4.0
+MODIFIERS           = N/A
+PEN_RHA_AT_PB       = 0.0
+PEN_RHA_CURVE       = 1.0
+
+[DE8.8PzGr]
+DESIGNATION         = 8.8cm Pzgr. Patr.
+TYPE                = APCBC
+CALIBER             = 8.8
+VELOCITY            = 810
+WEIGHT              = 9.5
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 135.650344
+PEN_RHA_CURVE       = 0.999844
+
+[DE8.8PzGr39]
+DESIGNATION         = 8.8cm Pzgr. Patr. 39
+TYPE                = APCBC
+CALIBER             = 8.8
+VELOCITY            = 773
+WEIGHT              = 10.2
+EXPLOSIVE           = 0.064
+MODIFIERS           = YELLOW_TRACER HE_BURSTER
+PEN_RHA_AT_PB       = 135.650344
+PEN_RHA_CURVE       = 0.999844
+
+[DE8.8SpGr]
+DESIGNATION         = 8.8cm Sprgr. Patr.
+TYPE                = HE
+CALIBER             = 8.8
+VELOCITY            = 810
+WEIGHT              = 9.5
+EXPLOSIVE           = 0.698
+MODIFIERS           = YELLOW_TRACER
+PEN_RHA_AT_PB       = 10.0
+PEN_RHA_CURVE       = 0.999844
+
+[DE8.8SMOKE]
+DESIGNATION         = 8.8cm Patr. Smoke
+TYPE                = SMOKE
+CALIBER             = 8.8
+VELOCITY            = 810
+WEIGHT              = 9.5
+MODIFIERS           = N/A
+PEN_RHA_AT_PB       = 0.0
+PEN_RHA_CURVE       = 1.0
+
+[DE10.5SpGr]
+DESIGNATION         = 10.5cm Sprgr. Patr.
+TYPE                = HE
+CALIBER             = 10.5
+VELOCITY            = 470
+WEIGHT              = 14.0
+EXPLOSIVE           = 1.750
+MODIFIERS           = N/A
+PEN_RHA_AT_PB       = 0.0
+PEN_RHA_CURVE       = 1.0
+
+[DE15.0SpGr]
+DESIGNATION         = 15.0cm Sprgr. Patr.
+TYPE                = HE
+CALIBER             = 15.0
+VELOCITY            = 280
+WEIGHT              = 25.0
+EXPLOSIVE           = 3.890
+MODIFIERS           = N/A
+PEN_RHA_AT_PB       = 0.0
+PEN_RHA_CURVE       = 1.0

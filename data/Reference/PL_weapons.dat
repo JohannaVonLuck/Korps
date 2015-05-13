@@ -1,0 +1,56 @@
+################################################################################
+#  Database File:   Polish Weapon Table                                        #
+#  Revision Info:   Revision I, Jan. 18, 2005                                  #
+#  Created By:      Johanna W. & Wojtek P.                                    #
+#  Comments:        Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+[PL2.0L73.5]
+DESIGNATION         = 2.0cm wz.38 FK-A L/73.5
+CLIP_SIZE           = 5
+CLIP_FIRING_RPM     = 320.0
+CLIP_STD_BURST      = 5
+A1_FIRED            = PL2.0AP
+#A2_FIRED            = PL2.0HE
+BARREL_RECOIL       = 1.0
+
+[PL3.7L45]
+DESIGNATION         = 3.7cm wz.36 Bofors L/45
+AUTOMATIC_EJECT     = TRUE
+A1_FIRED            = PL3.7AP
+#A2_FIRED            = PL3.7HE
+BARREL_RECOIL       = 0.35
+
+[PL4.7L18]
+DESIGNATION         = 4.7cm Vickers OQF L/18
+AUTOMATIC_EJECT     = TRUE
+A1_FIRED            = PL4.7AP
+#A2_FIRED            = PL4.7HE
+BARREL_RECOIL       = 0.35
+
+[PL2.0AP]
+TYPE                = AP
+CALIBER             = 2.0
+VELOCITY            = 858
+WEIGHT              = 0.15
+MODIFIERS           = GREEN_TRACER HE_FILLER
+PEN_RHA_AT_PB       = 41.268871
+PEN_RHA_CURVE       = 0.999246
+
+[PL3.7AP]
+TYPE                = AP
+CALIBER             = 3.7
+VELOCITY            = 800
+WEIGHT              = 0.7
+MODIFIERS           = RED_TRACER HE_FILLER
+PEN_RHA_AT_PB       = 55.928949
+PEN_RHA_CURVE       = 0.999522
+
+[PL4.7AP]
+TYPE                = AP
+CALIBER             = 4.7
+VELOCITY            = 488
+WEIGHT              = 1.5
+MODIFIERS           = NONE
+PEN_RHA_AT_PB       = 39.476776
+PEN_RHA_CURVE       = 0.999591

@@ -1,0 +1,5 @@
+define routine startMusic
+    playSound Sounds/battle.ogg
+endRoutine
+
+define trigger timeTrigger > 0 startMusic 0 startMusic

@@ -1,0 +1,129 @@
+################################################################################
+#  Database File:   Tank Optic Systems                                         #
+#  Revision Info:   Revision I, Dec. 3, 2004                                   #
+#  Created By:      Johanna W., David L., Michael R., Wojtek P., & Ryan.G.    #
+#  Comments:        Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+# Fill in for tanks unknown
+[FILL_IN]
+FIELD_OF_VIEW       = 25.0
+MAGNIFICATION       = 2.5
+#RETICLE             = STD
+
+# * German Optics *
+# Tank Mounted MG34
+[KgZF2]
+FIELD_OF_VIEW       = 18.0
+MAGNIFICATION       = 1.75
+#RETICLE             = DE
+# Tank Mounted MG37(t)
+[MGZF38t]
+FIELD_OF_VIEW       = 25
+MAGNIFICATION       = 2.6
+#RETICLE             = DE
+# PzIIc
+[TZF4]
+FIELD_OF_VIEW       = 24.0
+MAGNIFICATION       = 2.5
+#RETICLE             = DE
+# Pz35t/38t
+[TZF38t]
+FIELD_OF_VIEW       = 25.0
+MAGNIFICATION       = 2.6
+#RETICLE             = DE
+# PzIII 3.7cm
+[TZF5a]
+FIELD_OF_VIEW       = 25.0
+MAGNIFICATION       = 2.4
+#RETICLE             = DE
+# PzIV short 7.5cm
+[TZF5b]
+FIELD_OF_VIEW       = 25.0
+MAGNIFICATION       = 2.4
+#RETICLE             = DE
+# StuGIII short 7.5cm indirect-fire
+[RblF32]
+FIELD_OF_VIEW       = 10.0
+MAGNIFICATION       = 4.0
+#RETICLE             = DE
+# StuGIII short 7.5cm direct-fire
+[SflZF1]
+FIELD_OF_VIEW       = 8.0
+MAGNIFICATION       = 5.0
+#RETICLE             = DE
+# 3.7cm Pak
+[ZF1]
+FIELD_OF_VIEW       = 11.0
+MAGNIFICATION       = 1.0
+#RETICLE             = DE
+# 8.8cm Flak37
+[FZF20]
+FIELD_OF_VIEW       = 17.5
+MAGNIFICATION       = 4.0
+#RETICLE             = DE
+
+
+# * French Optics *
+# Old sight for 4.7cm SA34 in D1 tank, verified by Samur Museum
+[L.671]
+FIELD_OF_VIEW       = 9.56
+MAGNIFICATION       = 3.8
+#RETICLE             = FRV
+# 3.7cm TR16 IG
+[L.698]
+FIELD_OF_VIEW       = 7.88
+MAGNIFICATION       = 2.0
+#RETICLE             = FR+
+# 2.5cm SA34/37 ATG, (verified V reticle)
+[L.711]
+FIELD_OF_VIEW       = 10.13
+MAGNIFICATION       = 4.0
+#RETICLE             = FRV
+# 7.5cm SA35 (dual optics)
+[L.710]
+FIELD_OF_VIEW       = 11.15
+MAGNIFICATION       = 3.5
+#RETICLE             = FRDL
+# Early era 3.7cm SA18
+[L.713]
+FIELD_OF_VIEW       = 11.25
+MAGNIFICATION       = 4.0
+# 47mm SA34, D2/B1 tank, verified by Samur Museum
+[L.724]
+FIELD_OF_VIEW       = 11.25
+MAGNIFICATION       = 4.0
+#RETICLE             = FRV
+# Later era 3.7cm SA18
+#[L.739]
+FIELD_OF_VIEW       = 11.25
+MAGNIFICATION       = 4.0
+# 47mm SA35, B1bis/S35 tank, verified by Samur Museum
+[L.762]
+FIELD_OF_VIEW       = 11.81
+MAGNIFICATION       = 4.0
+#RETICLE             = FR+
+#3.7cm SA38
+[L.767]
+FIELD_OF_VIEW       = 11.25
+MAGNIFICATION       = 4.0
+# Unknown optic designation, 4.7cm SA37/39 ATG
+[L.7XX]
+FIELD_OF_VIEW       = 11.81
+MAGNIFICATION       = 4.0
+#RETICLE             = FR+
+
+
+# * Polish Optics *
+[wz.37C.A.]
+FIELD_OF_VIEW       = 21.0
+MAGNIFICATION       = 1.9
+#RETICLE             = PL
+
+
+# * British Optics *
+# 2pdr gun sight
+[No.33_Mk.II]
+FIELD_OF_VIEW       = 21.0
+MAGNIFICATION       = 1.9
+#RETICLE             = UK

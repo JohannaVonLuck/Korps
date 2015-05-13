@@ -1,0 +1,176 @@
+################################################################################
+#  Database File:   Panzer 38t A, German Light Tank                            #
+#  Revision Info:   Revision Ia, Jan. 19, 2005                                 #
+#  Created By:      Johanna W. & Michael R.                                   #
+#  Comments:        Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+[Pz_38t_A]
+
+# Specifications
+LONG_NAME           = PzKpfw 38t Ausf A
+SHORT_NAME          = Pz38tA
+ORIGIN              = German
+DESIGNATION         = Light Tank
+WEIGHT              = 9.4
+LENGTH              = 4.6
+WIDTH               = 2.12
+HEIGHT              = 2.4
+SPECIAL_CASE        = NA
+
+# Motor/Speed Control Data
+MOTOR               = EPA
+MAX_SPEED           = 42.0
+STEERING            = DIFF
+TURNING_CIRCLE      = 8.7
+SUSPENSION_EFF      = 0.95
+GEARS_FORWARD       = 5
+GEARS_REVERSE       = 1
+GEAR1_MAX_SPEED     = 4.1
+GEAR2_MAX_SPEED     = 10.3
+GEAR3_MAX_SPEED     = 16.5
+GEAR4_MAX_SPEED     = 26.2
+GEAR5_MAX_SPEED     = 42.0
+GEAR1_ATTAIN_TIME   = 2.0
+GEAR2_ATTAIN_TIME   = 4.5
+GEAR3_ATTAIN_TIME   = 8.25
+GEAR4_ATTAIN_TIME   = 20.25
+GEAR5_ATTAIN_TIME   = 80.0
+
+# Crew Data
+CREW_COUNT          = 4
+CREW1_NAME          = Commander
+CREW1_ATTACH        = TURRET1
+CREW2_NAME          = Loader
+CREW2_ATTACH        = TURRET1
+CREW3_NAME          = Driver
+CREW3_ATTACH        = HULL
+CREW4_NAME          = Radio Operator
+CREW4_ATTACH        = HULL
+FEED_ROUTINE_COUNT  = 8
+FEED_ROUTINE_1      = 1:4H1M 2:2M3L             # Order Recieve Routine
+FEED_ROUTINE_2      = 1:1H4M 2:2M3L             # Command Crew Routine
+FEED_ROUTINE_3      = 1:1H   2:2H               # Main Gun Routine
+FEED_ROUTINE_4      = 1:2H   2:1H               # Main Loader Routine
+FEED_ROUTINE_5      = 1:2M   2:1M               # Main MGs Routine
+FEED_ROUTINE_6      = 1:3H   2:4L               # Driver Routine
+FEED_ROUTINE_7      = 1:4M   2:3L               # Hull Machine Gun Routine
+FEED_ROUTINE_8      = 1:1H   2:2M               # Spotting Routine
+
+ORDER_RECIEVED_BY   = FEED_ROUTINE_1
+ORDER_COMMANDED_BY  = FEED_ROUTINE_2
+SPOTTING_BY         = FEED_ROUTINE_8
+DRIVING_BY          = FEED_ROUTINE_6
+
+# Devices (Turret & Optics) Data
+TURRET_COUNT        = 1
+TURRET1_SPEED       = 18
+CUPOLA_MODEL        = DBL_HATCH
+CUPOLA_ATTACH       = TURRET1
+SIGHT_COUNT         = 2
+SIGHT1_TYPE         = TZF38t
+SIGHT1_ATTACH       = TURRET1
+SIGHT1_ELEVATE_MIN  = -10
+SIGHT1_ELEVATE_MAX  = 25
+SIGHT1_ELEVATE_STD  = 0
+SIGHT1_AIMED_BY     = FEED_ROUTINE_3
+SIGHT2_TYPE         = MGZF38t
+SIGHT2_ATTACH       = HULL
+SIGHT2_ELEVATE_MIN  = -14
+SIGHT2_ELEVATE_MAX  = 25
+SIGHT2_ELEVATE_STD  = 0
+SIGHT2_TRANS_MIN    = -35
+SIGHT2_TRANS_MAX    = 11
+SIGHT2_AIMED_BY     = FEED_ROUTINE_7
+
+# Weapon & Ammo Data
+GUN_COUNT           = 3
+GUN1_TYPE           = DE3.7KwK38t
+GUN1_ATTACH         = TURRET1
+GUN1_SIGHT          = SIGHT1
+GUN1_LOADED_BY      = FEED_ROUTINE_4
+GUN1_LOAD_TIME      = 3.5
+GUN2_TYPE           = DE7.92MG37
+GUN2_ATTACH         = TURRET1
+GUN2_SIGHT          = SIGHT1
+GUN2_LOADED_BY      = FEED_ROUTINE_5
+GUN2_LOAD_TIME      = 3.0
+GUN3_TYPE           = DE7.92MG37
+GUN3_ATTACH         = HULL
+GUN3_SIGHT          = SIGHT2
+GUN3_LOADED_BY      = FEED_ROUTINE_7
+GUN3_LOAD_TIME      = 3.0
+
+# Ammo Pool Data
+AMMO_MAX_SHELL_LOAD = 72
+AMMO_MAX_MG_LOAD    = 2400
+AMMO_STDLOAD_A1     = 50
+AMMO_STDLOAD_A2     = 0
+AMMO_STDLOAD_A3     = 20
+AMMO_STDLOAD_A4     = 0
+AMMO_STDLOAD_A5     = 0
+AMMO_STDLOAD_A6     = 2400
+
+# Armor Thickness Data
+ARTHCK_FR_LW_HULL   = 25
+ARTHCK_LF_LW_HULL   = 55
+ARTHCK_RG_LW_HULL   = 60
+ARTHCK_RR_LW_HULL   = 15
+ARTHCK_FR_UP_HULL   = 25
+ARTHCK_LF_UP_HULL   = 55
+ARTHCK_RG_UP_HULL   = 60
+ARTHCK_RR_UP_HULL   = 15
+ARTHCK_TP_HULL      = 10
+ARTHCK_FR_TURRET1   = 25
+ARTHCK_LF_TURRET1   = 15
+ARTHCK_RG_TURRET1   = 15
+ARTHCK_RR_TURRET1   = 15
+ARTHCK_TP_TURRET1   = 8
+ARTHCK_GUN_MANT1    = 25
+ARTHCK_GUN1         = 15
+ARTHCK_GUN2         = 5
+ARTHCK_GUN3         = 5
+ARTHCK_CUPOLA       = 25
+ARTHCK_TRACK_L      = 5
+ARTHCK_TRACK_R      = 5
+
+# Armor Type Data
+ARTYPE_FR_LW_HULL   = RHA
+ARTYPE_LF_LW_HULL   = RHA
+ARTYPE_RG_LW_HULL   = RHA
+ARTYPE_RR_LW_HULL   = RHA
+ARTYPE_FR_UP_HULL   = RHA
+ARTYPE_LF_UP_HULL   = RHA
+ARTYPE_RG_UP_HULL   = RHA
+ARTYPE_RR_UP_HULL   = RHA
+ARTYPE_TP_HULL      = RHA
+ARTYPE_FR_TURRET1   = RHA
+ARTYPE_LF_TURRET1   = RHA
+ARTYPE_RG_TURRET1   = RHA
+ARTYPE_RR_TURRET1   = RHA
+ARTYPE_TP_TURRET1   = RHA
+ARTYPE_GUN_MANT1    = FHS
+ARTYPE_GUN1         = CAST
+ARTYPE_GUN2         = CAST
+ARTYPE_GUN3         = CAST
+ARTYPE_CUPOLA       = RHA
+ARTYPE_TRACK_L      = CAST
+ARTYPE_TRACK_R      = CAST
+
+# 3D Model Extension Data
+TURRET1_PIVOT       =  0.00  1.165 0.12
+GUN1_PIVOT          = -0.01  1.36  0.72
+GUN2_PIVOT          = -0.28  1.40  0.72
+GUN3_PIVOT          =  0.16  0.99  1.16
+SIGHT1_PIVOT        = -0.01  1.45  0.72
+SIGHT2_PIVOT        =  0.16  0.99  1.16
+CDH_UP_HULL         =  0.86
+CDH_TURRET          =  1.165
+GUN1_LENGTH         =  1.04
+GUN2_LENGTH         =  0.28
+GUN3_LENGTH         =  0.29
+CREW1_POS           =  0.16  1.30  0.11
+CREW2_POS           = -0.25  1.30  0.11
+CREW3_POS           = -0.35  0.85  0.70
+CREW4_POS           =  0.20  0.85  0.70
+MOTOR_POS           =  0.00  0.80 -0.90

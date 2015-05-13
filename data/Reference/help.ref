@@ -1,0 +1,98 @@
+################################################################################
+#  Help File                                                                   #
+#  Revision Info:   Revision Ia, Apr. 05, 2005                                 #
+#  Created By:      Joel Pavek                                                 #
+#  Comments:        Help command list file for Korps - Modify with pleasure    #
+################################################################################
+
+// General1 game commands
+// Lengths: command 16-1, parameters 32-1, section 16-1, definitions 64-1
+// command------Section---------Parameters----------------------Definition-----------------------------------------------------
+addComMessage   general1        t_message                       Adds message to Com. system.
+addMessage      general1        t_message                       Adds message to console pulldown and game display.
+addSysMessage   general1        t_message                       Adds message to console pulldown only.
+displayClock    general1        <none>                          Displays time into game.
+displayEffects  general1        <none>                          Displays all effects started from script files or promt.
+displayGoals    general1        <none>                          Displays Goals relevant to player.
+displayRoutines general1        <none>                          Displays routines in the system.
+displaySounds   general1        <none>                          Displays all sounds started from script files or prompt.
+displayTriggers general1        <none>                          Displays triggers in the system.
+exit            general1        <none>                          Exits the game.
+gainControl     general1        <none>                          Gives the player back control.
+getCamDir       general1        <none>                          Displays direction of camera.
+getCamPos       general1        <none>                          Displays position of camera.
+getHeight       general1        f_x f_y                         Display the height of terrain at specified position.
+getControl      general1        <none>                          Displays whether the player has control or not.
+help            general1        s_cmd OR s_section OR <none>    Displays info about commands.
+jumpClock       general1        f_secs                          Jumps clock by specified amount.
+jumpClockTo     general1        f_secs                          Jumps clock to specified number.
+killEffect      general1        i_id                            Kills effect with specified id number.
+killSound       general1        i_id                            Kills sound with specified id number.
+
+
+// General2 game commands 
+// command------Section---------Parameters----------------------Definition-----------------------------------------------------
+loseControl     general2        <none>                          Takes game control from user.
+loadScript      general2        s_filename                      Loads script on the fly.
+loadSuccess     general1        <none>                          Displays whether scripts loaded successfully.
+loseMission     general1        <none>                          Sets all goals to failure.
+playSound       general2        s_filename                      Plays sound from a specified file.
+query           general2        s_attribute                     Displays information from the database.
+runRoutine      general2        s_name                          Runs routine with matching name.
+setCamDir       general2        1 f_pitch f_yaw                 Sets camera direction.
+setCamPos       general2        f_x f_y f_z                     Sets camera position.
+setSideEffected general2        s_side                          Sets which side is affect by the preceding goals and triggers.
+winMission      general2        <none>                          Sets all goals to Successful.
+winResize       general2        i_width i_height                Resizes window.
+
+
+// Effect game commands
+// command------Section---------Parameters----------------------Definition-----------------------------------------------------
+startEffect     effect          s_name                          Adds effect of specified type.
+startEffect     effect          s_name f_px f_py f_pz           Adds effect of specified type and position.
+startEffect     effect          s_name f_px f_py f_pz f_mod     Adds effect of specified type, position, and modifier.
+startEffect     effect          s_name f_pos f_dir              Adds effect of specified type, position, and direction.
+startEffect     effect          s_name f_pos f_dir f_mod        Adds effect of specified type, position, direction, modifier.
+startEffect     effect          s_name f_pos f_dir f_mod f_sys  Adds effect of specified type, pos, dir, modifier, system dir.
+
+
+// Unit Modifier commands
+// command------Section---------Parameters----------------------Definition-----------------------------------------------------
+addWaypoint     unit            i_id f_x f_z
+destroyUnit     unit            i_id                            Destroys specified tank.
+killCrew        unit            i_id                            Kills Crew of specified tank.
+killWaypoints   unit            i_id                            Kills all waypoints on a specified tank.
+moveTo          unit            i_id f_x f_y                    Moves specified unit to specified coordinates.
+neutUnitFiring  unit            i_id                            Neutralizes firing of specified tank.
+neutUnitMove    unit            i_id                            Neutralizes movement of specified tank.
+removeUnit      unit            i_id                            Completely removes specified tank.
+repairUnit      unit            i_id                            Repairs specified tank.
+restoreAmmo     unit            i_id                            Restores ammo of specified tank.
+restoreCrew     unit            i_id                            Restores crew of specified tank.
+restUnitFiring  unit            i_id                            Restores firing of specified tank.
+restUnitMove    unit            i_id                            Restores movement of specified tank.
+
+
+// Scenery modifier commands
+// command------Section---------Parameters----------------------Definition-----------------------------------------------------
+destroyBuilding scenery         i_id                            Destroys specified building.
+
+// AI commands
+// command------Section---------Parameters----------------------Definition-----------------------------------------------------
+airAttack       ai              f_x f_y                         Launches air attack against specified coordinates.
+attackEnemy     ai              i_attacker i_defender i_type    Commands specified unit to attack specified enemy.
+halt            ai              i_id                            Commands specified unit to halt.
+moveIntoForm    ai              i_id i_type i_x i_y             Moves specified unit into formation.
+modeToDefensive ai              i_id                            Sets mode of specified unit to defensive.
+modeToOffensive ai              i_id                            Sets mode of specified unit to offensive.
+recon           ai              i_id                            Commands specified unit to recon enemy.
+retreat         ai              i_id f_x f_y i_type             Commands specified unit to retreat.
+routeEnemy      ai              i_id                            Commands specified unit to route enemy.
+stopAttacking   ai              i_id                            Commands specified unit to stop attacking.
+
+
+// defines
+// command------Section---------Parameters----------------------Definition-----------------------------------------------------
+define          defines         s_type                          Can not be called from command prompt.
+
+

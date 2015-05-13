@@ -1,0 +1,209 @@
+################################################################################
+#  Database File:   Tank Engines                                               #
+#  Revision Info:   Revision I, Dec. 3, 2004                                   #
+#  Created By:      Johanna W., David L., Michael R., Wojtek P., & Ryan.G.    #
+#  Comments:        Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+# * German Engines *
+# note: TR and TRM versions should both connect to the TRM table - they
+#       are essentially the same engine specifications.
+
+# PzIB (PzJgrIB and Kl.PzBefWg IB) engine
+[NL38TR]
+MAKE                = Maybach NL38TR
+FORM                = I6
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 100
+RPM                 = 3000
+CAPACITY            = 3.8
+# PzIIc engine
+[HL62TRM]
+MAKE                = Maybach HL62TRM
+FORM                = I6
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 140
+RPM                 = 2600
+CAPACITY            = 6.2
+# Pz35t engine
+[T11]
+MAKE                = Skoda T11
+FORM                = I4
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 120
+RPM                 = 1800
+CAPACITY            = 8.52
+# Pz38t engine
+[EPA]
+MAKE                = Praga EPA
+FORM                = I6
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 128
+RPM                 = 2200
+CAPACITY            = 7.75
+# Early PzIII and PvIV engine
+[HL108TR]
+MAKE                = Maybach HL108TR
+FORM                = V12
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 250
+RPM                 = 2800
+CAPACITY            = 10.8
+# PzIIIF, PvIVD, and StuGIIIA engine (sometimes listed as 300 HP)
+[HL120TRM]
+MAKE                = Maybach HL120TRM
+FORM                = V12
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 320
+RPM                 = 3000
+CAPACITY            = 11.9
+
+# * French Engines *
+
+# AMR-35 and R-35 engine
+[R85]
+MAKE                = Renault
+FORM                = I4
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 85
+RPM                 = 2200
+CAPACITY            = 5.881
+# AMC-35 engine
+[R180]
+MAKE                = Renault
+FORM                = I4
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 180
+RPM                 = 2200
+CAPACITY            = 5.8
+# FCM-36 engine
+[B95]
+MAKE                = Berliet-Ricardo
+FORM                = I4
+FUEL                = Diesel
+COOLANT             = Water
+POWER               = 95
+RPM                 = 1550
+CAPACITY            = 8.4
+# H-35 engine
+[6L61935]
+MAKE                = Hotchkiss 6L61935
+FORM                = I6
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 75
+RPM                 = 2700
+CAPACITY            = 5.9
+# H-39 engine
+[6L61938]
+MAKE                = Hotchkiss 6L61938
+FORM                = I6
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 120
+RPM                 = 2800
+CAPACITY            = 5.976
+# Renault D-2 engine
+[R150]
+MAKE                = Renault
+FORM                = I6
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 150
+RPM                 = ?
+CAPACITY            = ?
+# S-35 engine
+[S190]
+MAKE                = Somua
+FORM                = V8
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 190
+RPM                 = 2300
+CAPACITY            = 12.7
+# Renault B1 engine (sometimes listed as 272 HP due to earlier revision)
+[R300]
+MAKE                = Renault
+FORM                = I6
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 300
+RPM                 = 1900
+CAPACITY            = 16.5
+# Renault B1 bis engine
+[R307]
+MAKE                = Renault
+FORM                = I6
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 307
+RPM                 = 1900
+CAPACITY            = 16.5
+
+# * British Engines *
+
+# A-13 Mk.I (Cruiser Mk.III) and A-13 Mk.II (Cruiser Mk.IV) engine
+[L340]
+MAKE                = Liberty
+FORM                = V12
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 340
+RPM                 = 1500
+CAPACITY            = 27.0
+# Matilda II engine
+[A188]
+MAKE                = AEC
+FORM                = 2xV6
+FUEL                = Diesel
+COOLANT             = Water
+POWER               = 188
+RPM                 = 2000
+CAPACITY            = 13.5
+
+# * Polish Engines *
+
+# TKS engine - Old series
+[TKSo]
+MAKE                = Polski Fiat 122 AC
+FORM                = I4
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 42
+RPM                 = 2600
+CAPACITY            = 2.592
+# TKS engine - New series
+[TKSn]
+MAKE                = Polski Fiat 122 B
+FORM                = I4
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 46
+RPM                 = 2600
+CAPACITY            = 2.592
+# TK-3 engine
+[TK-3]
+MAKE                = Ford A
+FORM                = I4
+FUEL                = Petrol
+COOLANT             = Water
+POWER               = 40
+RPM                 = 2200
+CAPACITY            = 3.285
+# Vickers E Mk B engine
+[ASP92]
+MAKE                = Armstrong Siddeley Puma
+FORM                = I4
+FUEL                = Petrol
+COOLANT             = Air
+POWER               = 92
+RPM                 = 2400
+CAPACITY            = 6.667

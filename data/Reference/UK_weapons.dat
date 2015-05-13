@@ -1,0 +1,70 @@
+################################################################################
+#  Database File:   British Weapon Table                                       #
+#  Revision Info:   Revision I, Dec. 3, 2004                                   #
+#  Created By:      Johanna W. & Ryan G.                                      #
+#  Comments:        Original data file for Korps - Modify with pleasure        #
+################################################################################
+
+[UK2PDR]
+DESIGNATION         = 2pdr OQF 4.0cm L/52
+AUTOMATIC_EJECT     = TRUE
+A1_FIRED            = UK4.0AP
+BARREL_RECOIL       = 0.2
+
+[UK25PDR]
+DESIGNATION         = 25pdr OQF 8.76cm L/29
+AUTOMATIC_EJECT     = TRUE
+A1_FIRED            = UK8.76AP
+A2_FIRED            = UK8.76HE
+BARREL_RECOIL       = 0.2
+
+[UKMG]
+TYPE                = AP
+CALIBER             = x
+VELOCITY            = x
+WEIGHT              = x
+MODIFIERS           = NONE
+PEN_RHA_AT_PB       = 5
+PEN_RHA_CURVE       = 0.9
+
+[UK4.0AP]
+TYPE                = AP
+CALIBER             = 4.0
+VELOCITY            = 853
+WEIGHT              = 1.077
+MODIFIERS           = NONE
+PEN_RHA_AT_PB       = 86.789692
+PEN_RHA_CURVE       = 0.999368
+PEN_FHS_AT_PB       = 66.15708
+PEN_FHS_CURVE       = 0.999433
+
+[UK4.0APCBC]
+TYPE                = APCBC
+CALIBER             = 4.0
+VELOCITY            = 792
+WEIGHT              = 1.219
+MODIFIERS           = NONE
+PEN_RHA_AT_PB       = 74.893508
+PEN_RHA_CURVE       = 0.999723
+PEN_FHS_AT_PB       = 77.233436
+PEN_FHS_CURVE       = 0.999704
+
+[UK8.76AP]
+TYPE                = AP
+CALIBER             = 8.76
+VELOCITY            = 472
+WEIGHT              = 11.33
+MODIFIERS           = NONE
+PEN_RHA_AT_PB       = 81.21432
+PEN_RHA_CURVE       = 0.999578
+PEN_FHS_AT_PB       = 91.746839
+PEN_FHS_CURVE       = 0.999578
+
+[UK8.76HE]
+TYPE                = HE
+CALIBER             = 8.76
+VELOCITY            = 297
+WEIGHT              = 11.33
+MODIFIERS           = NONE
+PEN_RHA_AT_PB       = 20.0
+PEN_RHA_CURVE       = 0.9

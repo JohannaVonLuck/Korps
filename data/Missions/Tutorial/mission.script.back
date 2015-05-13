@@ -1,0 +1,87 @@
+setSideEffected ALL
+# Define Groups
+
+# Define Routines
+define routine init
+	addComMessage [COM] Welcome to Korps!
+endRoutine
+
+define routine startMovement1
+	moveTo PZ114 740 520
+    moveTo PZ112 725 520
+    moveTo PZ111 710 520
+    moveTo PZ113 695 520
+    
+    addWaypoint PZ114 650 650
+    addWaypoint PZ112 640 640
+    addWaypoint PZ111 630 630
+    addWaypoint PZ113 620 620
+    
+    addWaypoint PZ114 370 665
+    addWaypoint PZ112 370 660
+    addWaypoint PZ111 370 655
+    addWaypoint PZ113 370 650
+    
+    addComMessage [COM] 1.Zug moving out.
+endRoutine
+
+define routine startMovement2
+    moveTo PZ124 740 500
+    moveTo PZ122 725 500
+    moveTo PZ121 710 500
+    moveTo PZ123 695 500
+    
+    addWaypoint PZ124 660 650
+    addWaypoint PZ122 650 640
+    addWaypoint PZ121 640 630
+    addWaypoint PZ123 630 620
+    
+    addWaypoint PZ124 370 645
+    addWaypoint PZ122 370 640
+    addWaypoint PZ121 370 635
+    addWaypoint PZ123 370 630
+    
+    addComMessage [COM] 2.Zug moving out.
+endRoutine
+
+define routine underAttack
+	addComMessage [COM] Artillery incoming, southern flank!
+endRoutine
+
+define routine attackOver1
+    addComMessage [COM] 1.Zug reports no damage.
+endRoutine
+
+define routine attackOver2
+    addComMessage [COM] 2.Zug reporting no damage.
+endRoutine
+
+define routine secondPhase1
+    addComMessage [COM] Attack formation: Line Abreast.
+endRoutine
+
+define routine secondPhase2
+    addComMessage [COM] Firefront established. Awaiting orders.
+endRoutine
+
+# Define Goals
+define goal EnemyDestroyed 1 IsDestroyed winGame loseGame This is the primary goal.
+define goal CaptureOp 2 CaptureTank goal2Success null This is a secondary goal.
+define goal ReachOurCamp 3 reachOtherSide increaseAmmo null This is a bonus goal.
+
+# Define triggers
+define trigger cellRadiusTrigger bomb 0 234 454 12 killTank
+define trigger conditionalTrigger outOfTime 0 clockGreaterThanGameTime loseGame
+define trigger cellAreaTrigger alert 0 0.0 0.0 500.0 500.0 alarm
+
+define trigger timeTrigger > 0 startUp 0 init
+# define trigger timeTrigger > 0 startMusic 0 startMusic
+
+define trigger timeTrigger > 5 moveUnits 0 startMovement1
+define trigger timeTrigger > 10 moveUnits 0 startMovement2
+
+define trigger timeTrigger > 20 attackMessage 0 underAttack
+define trigger timeTrigger > 55 attackMessage 0 attackOver1
+define trigger timeTrigger > 60 attackMessage 0 attackOver2
+define trigger timeTrigger > 115 attackMessage 0 secondPhase1
+define trigger timeTrigger > 165 attackMessage 0 secondPhase2
